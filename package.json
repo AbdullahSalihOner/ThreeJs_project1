@@ -1,8 +1,11 @@
 {
+  "homepage": "http://AbdullahSalihOner.github.io/ThreeJs_First",
   "repository": "#",
   "license": "UNLICENSED",
   "scripts": {
     "build": "webpack --config ./bundler/webpack.prod.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "webpack serve --config ./bundler/webpack.dev.js"
   },
   "dependencies": {
